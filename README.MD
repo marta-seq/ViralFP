@@ -47,8 +47,10 @@ If you find this repository useful in your research or for educational purposes 
 
 ## License
 
-Developed at the  
-Centre of Biological Engineering, University of Minho, Portugal
+Developed at:
+1. Department of Informatics, School of Engineering, University of Minho, Braga, Portugal 
+2. ITQB NOVA, Instituto de Tecnologia Química e Biológica António Xavier, Universidade Nova de Lisboa, Oeiras, Portugal
+
 
 Released under the GNU Public License (version 3.0).
 
