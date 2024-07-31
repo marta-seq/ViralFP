@@ -1,0 +1,25 @@
+['AGLGALFLGFLGDSREHMG']
+                  sequence  x_percent      true  y_true  y_pred
+0    XXXXXXXXXXXXXXXXXXXXX   1.000000  1.000000       1       0
+1    XXXXXXXXXXXXXXXXXXXXX   1.000000  1.000000       1       0
+2    XXXXXXXXXXXXXXXXXXXXX   1.000000  1.000000       1       0
+3    XXXXXXXXXXXXXXXXXXXXX   1.000000  1.000000       1       0
+4    XXXXXXXXXXXXXXXXXXXXT   0.952381  0.952381       1       0
+..                     ...        ...       ...     ...     ...
+320  VLQRAGRAVLNIPRRIRQGAE        NaN  0.000000       0       0
+321  LQRAGRAVLNIPRRIRQGAER        NaN  0.000000       0       0
+322  QRAGRAVLNIPRRIRQGAERA        NaN  0.000000       0       0
+323  RAGRAVLNIPRRIRQGAERAL        NaN  0.000000       0       0
+324  AGRAVLNIPRRIRQGAERALL        NaN  0.000000       0       0
+
+[325 rows x 5 columns]
+Accuracy: 0.9569230769230769
+Precision: 0.0
+Recall: 0.0
+F1: 0.0
+ROC AUC: 0.5
+MCC: 0.0
+Jaccard index: 0.0
+Jaccard index max scores: 0.0
+sequences predicted
+[]

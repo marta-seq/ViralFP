@@ -1,0 +1,1736 @@
+all_Window21_gap1_ENCODING_OHE_DL_10groupedKFOLD_cluster80_LSTM_bayesianFinal
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weightsall_Window21_gap1_ENCODING_OHE_DL_10groupedKFOLD_cluster80_LSTM_bayesianFinal
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fec881ba6d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fec881ba2b0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fec881ba0d0>]all_Window21_gap1_ENCODING_OHE_DL_10groupedKFOLD_cluster80_LSTM_bayesianFinal
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7f70b80c97c0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7f70b80c9520>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7f70b80c9910>]all_Window21_gap1_ENCODING_OHE_DL_10groupedKFOLD_cluster80_LSTM_bayesianFinal
+self
+x_train
+y_train
+x_test
+y_test
+number_classes
+problem_type
+x_dval
+y_dval
+model
+epochs
+batch_size
+callbacks
+reduce_lr
+early_stopping
+checkpoint
+tensorboard
+early_stopping_patience
+reduce_lr_patience
+reduce_lr_factor
+reduce_lr_min
+path
+report_name
+verbose
+validation_split
+shuffle
+class_weights
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===TRAIN MODELS===
+
+run_model
+('Training Accuracy mean: ', 0.9865017502735822)
+('Validation Accuracy mean: ', 0.9668285722533861)
+('Training Loss mean: ', 0.08444457176404122)
+('Validation Loss mean: ', 0.15997274976987869)
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+bidirectional_4 (Bidirection (None, 21, 128)           44032     
+_________________________________________________________________
+bidirectional_5 (Bidirection (None, 21, 128)           98816     
+_________________________________________________________________
+bidirectional_6 (Bidirection (None, 128)               98816     
+_________________________________________________________________
+dense_3 (Dense)              (None, 64)                8256      
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 64)                256       
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 64)                256       
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 1)                 65        
+=================================================================
+Total params: 254,657
+Trainable params: 254,401
+Non-trainable params: 256
+_________________________________________________________________Finished run_model in 210.4431 secs
+
+
+            The hyperparameter search is complete. The optimal number of units in the first densely-connected
+            layer is 64 and the optimal learning rate for the optimizer
+            is 0.01.
+            Finished get_opt_params in 31253.2282 secs
+
+NoneNone
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       ...,
+
+       [[0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': 6       1
+8       1
+12      1
+13      1
+14      1
+       ..
+6760    0
+6770    0
+6780    0
+6790    0
+6800    0
+Name: label, Length: 671, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99       655
+           1       0.00      0.00      0.00        16
+
+    accuracy                           0.98       671
+   macro avg       0.49      0.50      0.49       671
+weighted avg       0.95      0.98      0.96       671
+
+
+===confusion_matrix===
+
+[[655   0]
+ [ 16   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9761549925484352
+MCC	0.0
+log_loss	
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.02384501 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]]], dtype=float32), 'y_test': 15      1
+16      1
+59      1
+67      1
+71      1
+       ..
+6761    0
+6771    0
+6781    0
+6791    0
+6801    0
+Name: label, Length: 680, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.99       660
+           1       0.00      0.00      0.00        20
+
+    accuracy                           0.97       680
+   macro avg       0.49      0.50      0.49       680
+weighted avg       0.94      0.97      0.96       680
+
+
+===confusion_matrix===
+
+[[660   0]
+ [ 20   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9705882352941176
+MCC	0.0
+log_loss	0.11174246101024002
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.02941176 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': 0       1
+22      1
+36      1
+38      1
+39      1
+       ..
+6762    0
+6772    0
+6782    0
+6792    0
+6802    0
+Name: label, Length: 685, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98       660
+           1       0.00      0.00      0.00        25
+
+    accuracy                           0.96       685
+   macro avg       0.48      0.50      0.49       685
+weighted avg       0.93      0.96      0.95       685
+
+
+===confusion_matrix===
+
+[[660   0]
+ [ 25   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9635036496350365
+MCC	0.0
+log_loss	0.021101163164160153
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.03649635 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]]], dtype=float32), 'y_test': 1       1
+42      1
+48      1
+49      1
+50      1
+       ..
+6767    0
+6777    0
+6787    0
+6797    0
+6807    0
+Name: label, Length: 686, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98       661
+           1       0.00      0.00      0.00        25
+
+    accuracy                           0.96       686
+   macro avg       0.48      0.50      0.49       686
+weighted avg       0.93      0.96      0.95       686
+
+
+===confusion_matrix===
+
+[[661   0]
+ [ 25   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9635568513119533
+MCC	0.0
+log_loss	
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.03644315 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': 3       1
+4       1
+19      1
+20      1
+26      1
+       ..
+6763    0
+6773    0
+6783    0
+6793    0
+6803    0
+Name: label, Length: 682, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.98       661
+           1       0.00      0.00      0.00        21
+
+    accuracy                           0.97       682
+   macro avg       0.48      0.50      0.49       682
+weighted avg       0.94      0.97      0.95       682
+
+
+===confusion_matrix===
+
+[[661   0]
+ [ 21   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.969208211143695
+MCC	0.0
+log_loss	
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.03079179 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 1., 0., 0.],
+        [0., 0., 1., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': 5       1
+25      1
+29      1
+30      1
+32      1
+       ..
+6764    0
+6774    0
+6784    0
+6794    0
+6804    0
+Name: label, Length: 673, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99       661
+           1       0.00      0.00      0.00        12
+
+    accuracy                           0.98       673
+   macro avg       0.49      0.50      0.50       673
+weighted avg       0.96      0.98      0.97       673
+
+
+===confusion_matrix===
+
+[[661   0]
+ [ 12   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9821693907875185
+MCC	0.0
+log_loss	
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.01783061 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': 2       1
+9       1
+10      1
+21      1
+23      1
+       ..
+6765    0
+6775    0
+6785    0
+6795    0
+6805    0
+Name: label, Length: 687, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98       661
+           1       0.00      0.00      0.00        26
+
+    accuracy                           0.96       687
+   macro avg       0.48      0.50      0.49       687
+weighted avg       0.93      0.96      0.94       687
+
+
+===confusion_matrix===
+
+[[661   0]
+ [ 26   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9621542940320232
+MCC	0.0
+log_loss	0.1141689834756854
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.03784571 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 1., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]]], dtype=float32), 'y_test': 7       1
+11      1
+31      1
+37      1
+57      1
+       ..
+6766    0
+6776    0
+6786    0
+6796    0
+6806    0
+Name: label, Length: 678, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.99       661
+           1       0.00      0.00      0.00        17
+
+    accuracy                           0.97       678
+   macro avg       0.49      0.50      0.49       678
+weighted avg       0.95      0.97      0.96       678
+
+
+===confusion_matrix===
+
+[[661   0]
+ [ 17   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9749262536873157
+MCC	0.0
+log_loss	
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.02507375 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 1., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 1., 0., 0.],
+        ...,
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': 17      1
+18      1
+33      1
+43      1
+61      1
+       ..
+6768    0
+6778    0
+6788    0
+6798    0
+6808    0
+Name: label, Length: 677, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99       661
+           1       0.00      0.00      0.00        16
+
+    accuracy                           0.98       677
+   macro avg       0.49      0.50      0.49       677
+weighted avg       0.95      0.98      0.96       677
+
+
+===confusion_matrix===
+
+[[661   0]
+ [ 16   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9763663220088626
+MCC	0.0
+log_loss	0.33667189410432485
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.02363368 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===SCORING TEST SET ===
+
+model_complete_evaluate
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.],
+        [1., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 1., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'y_test': 34      1
+35      1
+65      1
+88      1
+89      1
+       ..
+6769    0
+6779    0
+6789    0
+6799    0
+6809    0
+Name: label, Length: 691, dtype: int64, 'model': None}
+report
+
+              precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98       662
+           1       0.00      0.00      0.00        29
+
+    accuracy                           0.96       691
+   macro avg       0.48      0.50      0.49       691
+weighted avg       0.92      0.96      0.94       691
+
+
+===confusion_matrix===
+
+[[662   0]
+ [ 29   0]]
+
+===multilabel confusion matrix===
+
+[]
+
+===scores report===
+metrics	scores
+Accuracy	0.9580318379160637
+MCC	0.0
+log_loss	
+f1 score	0.0
+roc_auc	0.5
+Precision	[0.04196816 1.        ]
+Recall	[1. 0.]
+sn	0.0
+sp	1.0
+
+===TRAIN MODELS with CV===
+
+train_model_cv	Accuracy	MCC	log_loss	f1 score	roc_auc	Precision	Recall	sn	sp
+0	0.9761549925484352	0.0		0.0	0.5	[0.02384501 1.        ]	[1. 0.]	0.0	1.0
+1	0.9705882352941176	0.0	0.11174246101024002	0.0	0.5	[0.02941176 1.        ]	[1. 0.]	0.0	1.0
+2	0.9635036496350365	0.0	0.021101163164160153	0.0	0.5	[0.03649635 1.        ]	[1. 0.]	0.0	1.0
+3	0.9635568513119533	0.0		0.0	0.5	[0.03644315 1.        ]	[1. 0.]	0.0	1.0
+4	0.969208211143695	0.0		0.0	0.5	[0.03079179 1.        ]	[1. 0.]	0.0	1.0
+5	0.9821693907875185	0.0		0.0	0.5	[0.01783061 1.        ]	[1. 0.]	0.0	1.0
+6	0.9621542940320232	0.0	0.1141689834756854	0.0	0.5	[0.03784571 1.        ]	[1. 0.]	0.0	1.0
+7	0.9749262536873157	0.0		0.0	0.5	[0.02507375 1.        ]	[1. 0.]	0.0	1.0
+8	0.9763663220088626	0.0	0.33667189410432485	0.0	0.5	[0.02363368 1.        ]	[1. 0.]	0.0	1.0
+9	0.9580318379160637	0.0		0.0	0.5	[0.04196816 1.        ]	[1. 0.]	0.0	1.0
+mean	0.9696660038365021	0.0	0.1459211254386026	0.0	0.5			0.0	1.0
+std	0.007342630261621578	0.0	0.11634244533928384	0.0	0.0			0.0	0.0
+
+Accuracy
+MCC
+log_loss
+f1 score
+roc_auc
+Precision
+Recall
+sn
+spFinished train_model_cv in 1263.0076 secs
+
+
+===Callbacks===
+
+generate_callbacks
+[<tensorflow.python.keras.callbacks.EarlyStopping object at 0x7fd7ac2d89d0>, <tensorflow.python.keras.callbacks.ReduceLROnPlateau object at 0x7fd7ac2d83a0>, <tensorflow.python.keras.callbacks.ModelCheckpoint object at 0x7fd7ac2d8670>]
+===TRAIN MODELS===
+
+run_model
+('Training Accuracy mean: ', 0.9982687085866928)
+('Validation Accuracy mean: ', 0.35103605811794597)
+('Training Loss mean: ', 0.017296981894307666)
+('Validation Loss mean: ', 11.378479795685658)
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+bidirectional_4 (Bidirection (None, 21, 128)           44032     
+_________________________________________________________________
+bidirectional_5 (Bidirection (None, 21, 128)           98816     
+_________________________________________________________________
+bidirectional_6 (Bidirection (None, 128)               98816     
+_________________________________________________________________
+dense_3 (Dense)              (None, 64)                8256      
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 64)                256       
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 64)                256       
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 1)                 65        
+=================================================================
+Total params: 254,657
+Trainable params: 254,401
+Non-trainable params: 256
+_________________________________________________________________Finished run_model in 85.9547 secs
+
+
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}
+predict
+{'self': <propythia_new.src.propythia.deep_ml.DeepML object at 0x7fd7ac2d80a0>, 'x_test': array([[[0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 1., 0., ..., 0., 0., 0.]],
+
+       ...,
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.]],
+
+       [[0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 1., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 1.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]],
+
+       [[0., 0., 0., ..., 0., 1., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 1., 0., ..., 0., 0., 0.],
+        ...,
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.],
+        [0., 0., 0., ..., 0., 0., 0.]]], dtype=float32), 'seqs': None, 'model': None, 'names': None, 'true_y': None, 'batch': None}

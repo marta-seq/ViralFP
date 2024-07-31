@@ -1,0 +1,25 @@
+['ISLTVALMLGGITVGGMAR']
+                  sequence  x_percent  true  y_true  y_pred
+0    XXXXXXXXXXXXXXXXXXXXX        1.0   1.0       1       1
+1    XXXXXXXXXXXXXXXXXXXXX        1.0   1.0       1       1
+2    XXXXXXXXXXXXXXXXXXXXX        1.0   1.0       1       0
+3    XXXXXXXXXXXXXXXXXXXXX        1.0   1.0       1       0
+4    XXXXXXXXXXXXXXXXXXXXX        1.0   1.0       1       0
+..                     ...        ...   ...     ...     ...
+154  LLFGPCILNRLVQFVKDRISV        NaN   0.0       0       0
+155  LFGPCILNRLVQFVKDRISVV        NaN   0.0       0       0
+156  FGPCILNRLVQFVKDRISVVQ        NaN   0.0       0       0
+157  GPCILNRLVQFVKDRISVVQT        NaN   0.0       0       0
+158  PCILNRLVQFVKDRISVVQTL        NaN   0.0       0       0
+
+[159 rows x 5 columns]
+Accuracy: 0.8930817610062893
+Precision: 0.4
+Recall: 0.26666666666666666
+F1: 0.32
+ROC AUC: 0.6124999999999999
+MCC: 0.2709045251467137
+Jaccard index: 0.07407407407407407
+Jaccard index max scores: 0.07407407407407407
+sequences predicted
+['DPISLTVALMLGGITVGGMARN', 'ALMLGGITVGGMARNRNRDCGL', 'LFLQEGGLCTALKEECCFYADHTGLV']

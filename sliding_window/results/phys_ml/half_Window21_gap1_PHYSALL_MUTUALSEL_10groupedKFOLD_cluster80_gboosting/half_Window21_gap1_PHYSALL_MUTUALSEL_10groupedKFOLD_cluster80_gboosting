@@ -1,0 +1,459 @@
+/home/martinha/PycharmProjects/viral_fp/viral_fp_new/src/classify_segments/results/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting/home/martinha/PycharmProjects/viral_fp/viral_fp_new/src/classify_segments/results/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting
+===TRAIN MODELS===
+
+train_best_model
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7f274009ac40>, 'model_name': 'gboosting', 'model': None, 'scaler': None, 'score': make_scorer(matthews_corrcoef), 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'optType': 'gridSearch', 'param_grid': None, 'n_jobs': 10, 'random_state': 1, 'n_iter': 15, 'refit': True, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+408    1202
+409    1203
+410    1204
+411    1205
+412    1206
+Name: cluster80, Length: 413, dtype: int64, 'params': {}, 'start': 1389872.382905204}
+['Model with rank: 1\n', 'Mean validation score: 0.845 (std: 0.101)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 500}\n", '\n']
+['Model with rank: 2\n', 'Mean validation score: 0.833 (std: 0.104)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.9, 'clf__n_estimators': 500}\n", '\n']
+['Model with rank: 3\n', 'Mean validation score: 0.830 (std: 0.090)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 100}\n", '\n']
+Best score (scorer: make_scorer(matthews_corrcoef)) and parameters from a -fold cross validation:
+
+Score:	0.845
+
+Parameters:	{'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 500}
+
+Finished train_best_model in 189.2915 secs
+
+	means	stds	clf__max_depth	clf__max_features	clf__n_estimators
+8	0.845	0.101	3	0.600	500
+11	0.833	0.104	3	0.900	500
+7	0.830	0.090	3	0.600	100
+10	0.821	0.089	3	0.900	100
+14	0.821	0.095	5	0.600	500
+1	0.813	0.090	1	0.600	100
+4	0.808	0.098	1	0.900	100
+5	0.803	0.107	1	0.900	500
+2	0.803	0.110	1	0.600	500
+13	0.794	0.073	5	0.600	100
+17	0.779	0.070	5	0.900	500
+19	0.770	0.101	10	0.600	100
+9	0.770	0.111	3	0.900	10
+20	0.764	0.105	10	0.600	500
+15	0.735	0.136	5	0.900	10
+12	0.729	0.085	5	0.600	10
+6	0.720	0.118	3	0.600	10
+21	0.715	0.101	10	0.900	10
+23	0.708	0.098	10	0.900	500
+16	0.707	0.081	5	0.900	100
+22	0.705	0.101	10	0.900	100
+18	0.701	0.118	10	0.600	10
+3	0.679	0.112	1	0.900	10
+0	0.662	0.126	1	0.600	10
+
+===Scikit learn cross validate ===
+
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7f274009ac40>, 'clf': None, 'scoring': {'accuracy': make_scorer(accuracy_score), 'prec': 'precision', 'recall': 'recall', 'MCC': make_scorer(matthews_corrcoef), 'F1': make_scorer(f1_score), 'roc_auc': make_scorer(roc_auc_score)}, 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'n_jobs': 10, 'random_state': 1, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+408    1202
+409    1203
+410    1204
+411    1205
+412    1206
+Name: cluster80, Length: 413, dtype: int64, 'params': {'return_train_score': False}}	fit_time	score_time	test_accuracy	test_prec	test_recall	test_MCC	test_F1	test_roc_auc
+0	10.2799	0.0034	0.9333	0.8571	1.0000	0.8729	0.9231	0.9444
+1	10.1305	0.0032	0.9250	0.9444	0.8947	0.8503	0.9189	0.9236
+2	9.9682	0.0031	0.9524	0.9167	1.0000	0.9083	0.9565	0.9500
+3	10.2250	0.0031	0.9118	1.0000	0.7692	0.8204	0.8696	0.8846
+4	9.6540	0.0032	0.9649	0.9714	0.9714	0.9260	0.9714	0.9630
+5	10.0216	0.0031	0.9756	1.0000	0.9444	0.9514	0.9714	0.9722
+6	9.5831	0.0032	0.9444	1.0000	0.9091	0.8919	0.9524	0.9545
+7	10.2912	0.0031	0.9375	1.0000	0.8333	0.8704	0.9091	0.9167
+8	9.8383	0.0032	0.7843	0.8889	0.7500	0.5735	0.8136	0.7961
+9	10.2547	0.0031	0.9062	0.9000	0.8182	0.7896	0.8571	0.8853
+mean	10.0246	0.0032	0.9236	0.9479	0.8890	0.8455	0.9143	0.9190
+std	0.2471	0.0001	0.0508	0.0514	0.0876	0.1014	0.0503	0.0501
+/home/martinha/PycharmProjects/viral_fp/viral_fp_new/src/classify_segments/results/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting/home/martinha/PycharmProjects/viral_fp/viral_fp_new/src/classify_segments/results/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting
+===TRAIN MODELS===
+
+train_best_model
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7f59ac578d00>, 'model_name': 'gboosting', 'model': None, 'scaler': None, 'score': make_scorer(matthews_corrcoef), 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'optType': 'gridSearch', 'param_grid': None, 'n_jobs': 10, 'random_state': 1, 'n_iter': 15, 'refit': True, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+408    1202
+409    1203
+410    1204
+411    1205
+412    1206
+Name: cluster80, Length: 413, dtype: int64, 'params': {}, 'start': 1390758.290337952}
+['Model with rank: 1\n', 'Mean validation score: 0.845 (std: 0.101)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 500}\n", '\n']
+['Model with rank: 2\n', 'Mean validation score: 0.833 (std: 0.104)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.9, 'clf__n_estimators': 500}\n", '\n']
+['Model with rank: 3\n', 'Mean validation score: 0.830 (std: 0.090)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 100}\n", '\n']
+Best score (scorer: make_scorer(matthews_corrcoef)) and parameters from a -fold cross validation:
+
+Score:	0.845
+
+Parameters:	{'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 500}
+
+Finished train_best_model in 188.3522 secs
+
+	means	stds	clf__max_depth	clf__max_features	clf__n_estimators
+8	0.845	0.101	3	0.600	500
+11	0.833	0.104	3	0.900	500
+7	0.830	0.090	3	0.600	100
+10	0.821	0.089	3	0.900	100
+14	0.821	0.095	5	0.600	500
+1	0.813	0.090	1	0.600	100
+4	0.808	0.098	1	0.900	100
+5	0.803	0.107	1	0.900	500
+2	0.803	0.110	1	0.600	500
+13	0.794	0.073	5	0.600	100
+17	0.779	0.070	5	0.900	500
+19	0.770	0.101	10	0.600	100
+9	0.770	0.111	3	0.900	10
+20	0.764	0.105	10	0.600	500
+15	0.735	0.136	5	0.900	10
+12	0.729	0.085	5	0.600	10
+6	0.720	0.118	3	0.600	10
+21	0.715	0.101	10	0.900	10
+23	0.708	0.098	10	0.900	500
+16	0.707	0.081	5	0.900	100
+22	0.705	0.101	10	0.900	100
+18	0.701	0.118	10	0.600	10
+3	0.679	0.112	1	0.900	10
+0	0.662	0.126	1	0.600	10
+
+===Scikit learn cross validate ===
+
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7f59ac578d00>, 'clf': None, 'scoring': {'accuracy': make_scorer(accuracy_score), 'prec': 'precision', 'recall': 'recall', 'MCC': make_scorer(matthews_corrcoef), 'F1': make_scorer(f1_score), 'roc_auc': make_scorer(roc_auc_score)}, 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'n_jobs': 10, 'random_state': 1, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+408    1202
+409    1203
+410    1204
+411    1205
+412    1206
+Name: cluster80, Length: 413, dtype: int64, 'params': {'return_train_score': False}}	fit_time	score_time	test_accuracy	test_prec	test_recall	test_MCC	test_F1	test_roc_auc
+0	10.2668	0.0034	0.9333	0.8571	1.0000	0.8729	0.9231	0.9444
+1	10.0532	0.0031	0.9250	0.9444	0.8947	0.8503	0.9189	0.9236
+2	9.9372	0.0031	0.9524	0.9167	1.0000	0.9083	0.9565	0.9500
+3	10.1815	0.0031	0.9118	1.0000	0.7692	0.8204	0.8696	0.8846
+4	9.6415	0.0032	0.9649	0.9714	0.9714	0.9260	0.9714	0.9630
+5	9.9972	0.0031	0.9756	1.0000	0.9444	0.9514	0.9714	0.9722
+6	9.5756	0.0032	0.9444	1.0000	0.9091	0.8919	0.9524	0.9545
+7	10.2470	0.0030	0.9375	1.0000	0.8333	0.8704	0.9091	0.9167
+8	9.8259	0.0032	0.7843	0.8889	0.7500	0.5735	0.8136	0.7961
+9	10.2088	0.0030	0.9062	0.9000	0.8182	0.7896	0.8571	0.8853
+mean	9.9935	0.0031	0.9236	0.9479	0.8890	0.8455	0.9143	0.9190
+std	0.2354	0.0001	0.0508	0.0514	0.0876	0.1014	0.0503	0.0501
+/home/martinha/PycharmProjects/viral_fp/viral_fp_new/src/classify_segments/results/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting
+===TRAIN MODELS===
+
+train_best_model
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fc554131be0>, 'model_name': 'gboosting', 'model': None, 'scaler': None, 'score': make_scorer(matthews_corrcoef), 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'optType': 'gridSearch', 'param_grid': None, 'n_jobs': 10, 'random_state': 1, 'n_iter': 15, 'refit': True, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+408    1202
+409    1203
+410    1204
+411    1205
+412    1206
+Name: cluster80, Length: 413, dtype: int64, 'params': {}, 'start': 1391307.501777891}
+['Model with rank: 1\n', 'Mean validation score: 0.845 (std: 0.101)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 500}\n", '\n']
+['Model with rank: 2\n', 'Mean validation score: 0.833 (std: 0.104)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.9, 'clf__n_estimators': 500}\n", '\n']
+['Model with rank: 3\n', 'Mean validation score: 0.830 (std: 0.090)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 100}\n", '\n']
+Best score (scorer: make_scorer(matthews_corrcoef)) and parameters from a -fold cross validation:
+
+Score:	0.845
+
+Parameters:	{'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 500}
+
+Finished train_best_model in 186.8534 secs
+
+	means	stds	clf__max_depth	clf__max_features	clf__n_estimators
+8	0.845	0.101	3	0.600	500
+11	0.833	0.104	3	0.900	500
+7	0.830	0.090	3	0.600	100
+10	0.821	0.089	3	0.900	100
+14	0.821	0.095	5	0.600	500
+1	0.813	0.090	1	0.600	100
+4	0.808	0.098	1	0.900	100
+5	0.803	0.107	1	0.900	500
+2	0.803	0.110	1	0.600	500
+13	0.794	0.073	5	0.600	100
+17	0.779	0.070	5	0.900	500
+19	0.770	0.101	10	0.600	100
+9	0.770	0.111	3	0.900	10
+20	0.764	0.105	10	0.600	500
+15	0.735	0.136	5	0.900	10
+12	0.729	0.085	5	0.600	10
+6	0.720	0.118	3	0.600	10
+21	0.715	0.101	10	0.900	10
+23	0.708	0.098	10	0.900	500
+16	0.707	0.081	5	0.900	100
+22	0.705	0.101	10	0.900	100
+18	0.701	0.118	10	0.600	10
+3	0.679	0.112	1	0.900	10
+0	0.662	0.126	1	0.600	10
+
+===Scikit learn cross validate ===
+
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fc554131be0>, 'clf': None, 'scoring': {'accuracy': make_scorer(accuracy_score), 'prec': 'precision', 'recall': 'recall', 'MCC': make_scorer(matthews_corrcoef), 'F1': make_scorer(f1_score), 'roc_auc': make_scorer(roc_auc_score)}, 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'n_jobs': 10, 'random_state': 1, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+408    1202
+409    1203
+410    1204
+411    1205
+412    1206
+Name: cluster80, Length: 413, dtype: int64, 'params': {'return_train_score': False}}	fit_time	score_time	test_accuracy	test_prec	test_recall	test_MCC	test_F1	test_roc_auc
+0	10.2885	0.0035	0.9333	0.8571	1.0000	0.8729	0.9231	0.9444
+1	10.0754	0.0031	0.9250	0.9444	0.8947	0.8503	0.9189	0.9236
+2	9.9648	0.0032	0.9524	0.9167	1.0000	0.9083	0.9565	0.9500
+3	10.1945	0.0031	0.9118	1.0000	0.7692	0.8204	0.8696	0.8846
+4	9.6554	0.0033	0.9649	0.9714	0.9714	0.9260	0.9714	0.9630
+5	10.0282	0.0032	0.9756	1.0000	0.9444	0.9514	0.9714	0.9722
+6	9.5875	0.0032	0.9444	1.0000	0.9091	0.8919	0.9524	0.9545
+7	10.2764	0.0031	0.9375	1.0000	0.8333	0.8704	0.9091	0.9167
+8	9.8347	0.0032	0.7843	0.8889	0.7500	0.5735	0.8136	0.7961
+9	10.2263	0.0031	0.9062	0.9000	0.8182	0.7896	0.8571	0.8853
+mean	10.0132	0.0032	0.9236	0.9479	0.8890	0.8455	0.9143	0.9190
+std	0.2389	0.0001	0.0508	0.0514	0.0876	0.1014	0.0503	0.0501
+/home/martinha/PycharmProjects/viral_fp/viral_fp_new/src/classify_segments/results/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting/half_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_gboosting
+===TRAIN MODELS===
+
+train_best_model
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'model_name': 'gboosting', 'model': None, 'scaler': None, 'score': make_scorer(matthews_corrcoef), 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'optType': 'gridSearch', 'param_grid': None, 'n_jobs': 10, 'random_state': 1, 'n_iter': 15, 'refit': True, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+408    1202
+409    1203
+410    1204
+411    1205
+412    1206
+Name: cluster80, Length: 413, dtype: int64, 'params': {}, 'start': 1392151.241527512}
+['Model with rank: 1\n', 'Mean validation score: 0.845 (std: 0.101)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 500}\n", '\n']
+['Model with rank: 2\n', 'Mean validation score: 0.833 (std: 0.104)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.9, 'clf__n_estimators': 500}\n", '\n']
+['Model with rank: 3\n', 'Mean validation score: 0.830 (std: 0.090)\n', "Parameters: {'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 100}\n", '\n']
+Best score (scorer: make_scorer(matthews_corrcoef)) and parameters from a -fold cross validation:
+
+Score:	0.845
+
+Parameters:	{'clf__max_depth': 3, 'clf__max_features': 0.6, 'clf__n_estimators': 500}
+
+Finished train_best_model in 187.8625 secs
+
+	means	stds	clf__max_depth	clf__max_features	clf__n_estimators
+8	0.845	0.101	3	0.600	500
+11	0.833	0.104	3	0.900	500
+7	0.830	0.090	3	0.600	100
+10	0.821	0.089	3	0.900	100
+14	0.821	0.095	5	0.600	500
+1	0.813	0.090	1	0.600	100
+4	0.808	0.098	1	0.900	100
+5	0.803	0.107	1	0.900	500
+2	0.803	0.110	1	0.600	500
+13	0.794	0.073	5	0.600	100
+17	0.779	0.070	5	0.900	500
+19	0.770	0.101	10	0.600	100
+9	0.770	0.111	3	0.900	10
+20	0.764	0.105	10	0.600	500
+15	0.735	0.136	5	0.900	10
+12	0.729	0.085	5	0.600	10
+6	0.720	0.118	3	0.600	10
+21	0.715	0.101	10	0.900	10
+23	0.708	0.098	10	0.900	500
+16	0.707	0.081	5	0.900	100
+22	0.705	0.101	10	0.900	100
+18	0.701	0.118	10	0.600	10
+3	0.679	0.112	1	0.900	10
+0	0.662	0.126	1	0.600	10
+
+===Scikit learn cross validate ===
+
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'clf': None, 'scoring': {'accuracy': make_scorer(accuracy_score), 'prec': 'precision', 'recall': 'recall', 'MCC': make_scorer(matthews_corrcoef), 'F1': make_scorer(f1_score), 'roc_auc': make_scorer(roc_auc_score)}, 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'n_jobs': 10, 'random_state': 1, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+408    1202
+409    1203
+410    1204
+411    1205
+412    1206
+Name: cluster80, Length: 413, dtype: int64, 'params': {'return_train_score': False}}	fit_time	score_time	test_accuracy	test_prec	test_recall	test_MCC	test_F1	test_roc_auc
+0	10.3167	0.0036	0.9333	0.8571	1.0000	0.8729	0.9231	0.9444
+1	10.1045	0.0033	0.9250	0.9444	0.8947	0.8503	0.9189	0.9236
+2	9.9950	0.0034	0.9524	0.9167	1.0000	0.9083	0.9565	0.9500
+3	10.2473	0.0033	0.9118	1.0000	0.7692	0.8204	0.8696	0.8846
+4	9.6792	0.0034	0.9649	0.9714	0.9714	0.9260	0.9714	0.9630
+5	10.0473	0.0033	0.9756	1.0000	0.9444	0.9514	0.9714	0.9722
+6	9.6036	0.0034	0.9444	1.0000	0.9091	0.8919	0.9524	0.9545
+7	10.3203	0.0032	0.9375	1.0000	0.8333	0.8704	0.9091	0.9167
+8	9.8688	0.0034	0.7843	0.8889	0.7500	0.5735	0.8136	0.7961
+9	10.2784	0.0032	0.9062	0.9000	0.8182	0.7896	0.8571	0.8853
+mean	10.0461	0.0034	0.9236	0.9479	0.8890	0.8455	0.9143	0.9190
+std	0.2471	0.0001	0.0508	0.0514	0.0876	0.1014	0.0503	0.0501
+
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114, -0.72264943, -0.74726865, ..., -1.29531472,
+         0.30491239,  0.66058334],
+       [-0.30293114, -0.72264943, -0.74176398, ..., -1.29531472,
+         0.30491239,  0.66058334],
+       [-0.30293114, -0.72264943, -0.74176398, ..., -1.29531472,
+         0.30491239,  0.66058334],
+       ...,
+       [-0.30293114, -0.80896918, -0.86285263, ..., -1.29531472,
+         0.30491239,  0.66058334],
+       [-0.30293114, -2.45233269, -2.58203717, ..., -1.29531472,
+         1.40233126,  0.66058334],
+       [-0.30293114, -3.21852318, -3.36323902, ..., -1.29531472,
+         1.40233126,  0.66058334]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114, -0.64044015, -0.77287122, ..., -0.98473999,
+        -0.79250649,  0.66058334],
+       [-0.30293114, -0.64044015, -0.77287122, ..., -0.98473999,
+        -0.79250649,  0.66058334],
+       [-0.30293114, -0.64044015, -0.76637971, ..., -0.98473999,
+        -0.79250649,  0.66058334],
+       ...,
+       [-0.30293114,  4.20990738,  4.2201587 , ..., -0.36359052,
+         2.49975013,  2.15959937],
+       [-0.30293114,  4.20990738,  4.24625742, ..., -0.36359052,
+         2.49975013,  2.15959937],
+       [-0.30293114,  3.38781458,  3.47434971, ..., -0.36359052,
+         2.49975013,  2.15959937]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114,  0.09862128,  0.0779054 , ..., -0.67416525,
+        -0.24379705, -0.83843269],
+       [-0.30293114,  0.92071408,  1.03291517, ..., -0.67416525,
+        -0.24379705,  0.66058334],
+       [-0.30293114,  1.74280688,  1.93507758, ..., -0.67416525,
+        -0.24379705,  0.66058334],
+       ...,
+       [-0.30293114,  1.68772667,  1.65093769, ..., -0.05301578,
+         2.49975013,  0.66058334],
+       [-0.30293114,  1.68772667,  1.68123897, ..., -0.05301578,
+         3.04845956,  0.66058334],
+       [-0.30293114,  1.68772667,  1.64448589, ..., -0.05301578,
+         3.04845956,  0.66058334]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114,  0.92071408,  1.08889135, ..., -0.36359052,
+        -0.24379705,  0.66058334],
+       [-0.30293114,  0.92071408,  1.1142455 , ..., -0.36359052,
+        -0.24379705,  0.66058334],
+       [-0.30293114,  0.92071408,  1.10620891, ..., -0.36359052,
+        -0.24379705,  0.66058334],
+       ...,
+       [-0.30293114,  4.2082632 ,  4.27442277, ..., -1.60588946,
+         1.40233126,  2.15959937],
+       [-0.30293114,  3.38699249,  3.45739553, ..., -1.60588946,
+         0.85362182,  2.15959937],
+       [-0.30293114,  3.38699249,  3.47485483, ..., -1.29531472,
+         0.85362182,  2.15959937]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114, -1.60064454, -1.78795091, ..., -1.60588946,
+         0.85362182, -0.83843269],
+       [-0.30293114, -1.60064454, -1.7511076 , ..., -1.60588946,
+         0.85362182, -0.83843269],
+       [-0.30293114, -0.77855174, -0.85476874, ..., -1.60588946,
+         0.85362182, -0.83843269],
+       ...,
+       [-0.30293114,  3.27518787,  3.49430536, ..., -1.29531472,
+         0.30491239,  0.66058334],
+       [-0.30293114,  4.09728067,  4.27517351, ..., -1.29531472,
+        -0.24379705,  0.66058334],
+       [-0.30293114,  4.91937347,  5.04687449, ..., -1.29531472,
+        -0.24379705,  0.66058334]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114, -0.77855174, -0.84861299, ..., -1.29531472,
+         1.95104069,  0.66058334],
+       [-0.30293114, -0.77855174, -0.85437981, ..., -1.29531472,
+         1.95104069,  0.66058334],
+       [-0.30293114,  0.04107478,  0.01800308, ..., -1.29531472,
+         1.95104069,  0.66058334],
+       ...,
+       [-0.30293114,  0.86398968,  0.83769941, ...,  0.25755895,
+        -0.24379705,  0.66058334],
+       [-0.30293114,  0.04271897,  0.02181953, ..., -0.36359052,
+        -0.24379705,  0.66058334],
+       [-0.30293114,  0.04354106,  0.02027152, ..., -0.36359052,
+        -0.24379705,  0.66058334]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114,  0.04354106,  0.02326274, ..., -1.29531472,
+         0.30491239,  0.66058334],
+       [-0.30293114,  0.04354106,  0.02291961, ..., -1.29531472,
+         0.30491239,  0.66058334],
+       [-0.30293114,  0.86316758,  0.83787824, ..., -1.29531472,
+         0.30491239,  0.66058334],
+       ...,
+       [-0.30293114,  0.91989199,  0.90537355, ...,  0.25755895,
+        -0.24379705,  0.66058334],
+       [-0.30293114,  0.09862128,  0.07834448, ..., -0.36359052,
+        -0.24379705,  0.66058334],
+       [-0.30293114,  0.09862128,  0.07823098, ..., -0.36359052,
+        -0.24379705,  0.66058334]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114,  0.09862128,  0.07752609, ..., -0.05301578,
+        -0.79250649, -0.83843269],
+       [-0.30293114,  0.09862128,  0.07752609, ..., -0.05301578,
+        -0.79250649, -0.83843269],
+       [-0.30293114,  0.09862128,  0.07746267, ..., -0.05301578,
+        -0.79250649, -0.83843269],
+       ...,
+       [-0.30293114,  4.29129457,  4.13398467, ..., -0.36359052,
+         2.49975013,  3.6586154 ],
+       [-0.30293114,  4.29129457,  4.15851552, ..., -0.36359052,
+         2.49975013,  3.6586154 ],
+       [-0.30293114,  3.46920177,  3.41654508, ..., -0.36359052,
+         2.49975013,  3.6586154 ]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114,  1.63100226,  1.62976038, ..., -0.67416525,
+        -0.79250649,  0.66058334],
+       [-0.30293114,  1.63100226,  1.61942275, ..., -0.36359052,
+        -0.79250649,  0.66058334],
+       [-0.30293114,  0.80890946,  0.80205243, ..., -0.36359052,
+        -0.79250649,  0.66058334],
+       ...,
+       [-0.30293114,  3.41247737,  3.10839328, ..., -1.29531472,
+         1.95104069,  2.15959937],
+       [-0.30293114,  3.46837968,  3.21435511, ..., -1.29531472,
+         1.95104069,  2.15959937],
+       [-0.30293114,  4.29047248,  3.95683766, ..., -1.60588946,
+         1.95104069,  2.15959937]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+predict
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'x': array([[-0.30293114, -0.72347152, -0.86440173, ..., -0.67416525,
+         0.30491239, -0.83843269],
+       [-0.30293114, -0.72347152, -0.83130896, ..., -0.67416525,
+         0.30491239, -0.83843269],
+       [-0.30293114, -0.72347152, -0.83639456, ..., -0.67416525,
+         0.30491239, -0.83843269],
+       ...,
+       [-0.30293114, -1.57269339, -1.66537808, ..., -1.60588946,
+         2.49975013,  2.15959937],
+       [-0.30293114, -1.57351548, -1.58935366, ..., -1.60588946,
+         2.49975013,  2.15959937],
+       [-0.30293114, -1.57351548, -1.57969242, ..., -1.29531472,
+         1.95104069,  2.15959937]]), 'seqs': None, 'classifier': None, 'names': None, 'true_y': None}
+features_importances_df
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fd41c3eb580>, 'classifier': None, 'model_name': None, 'top_features': 20, 'column_to_sort': 'mean_coef'}

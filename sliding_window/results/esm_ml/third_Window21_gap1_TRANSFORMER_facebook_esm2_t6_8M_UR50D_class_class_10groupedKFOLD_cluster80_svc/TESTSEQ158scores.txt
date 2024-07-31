@@ -1,0 +1,25 @@
+['VGAATLCSALYVGDLCGALFLVGQGFSWRH']
+                  sequence  x_percent  true  y_true  y_pred
+0    LEYRNASGLYTVTNDCSNGSI        NaN   0.0       0       0
+1    EYRNASGLYTVTNDCSNGSIV        NaN   0.0       0       0
+2    YRNASGLYTVTNDCSNGSIVY        NaN   0.0       0       0
+3    RNASGLYTVTNDCSNGSIVYE        NaN   0.0       0       0
+4    NASGLYTVTNDCSNGSIVYEA        NaN   0.0       0       0
+..                     ...        ...   ...     ...     ...
+167  VAYYSMQGNWAKVFLVLCLFS        NaN   0.0       0       0
+168  AYYSMQGNWAKVFLVLCLFSG        NaN   0.0       0       0
+169  YYSMQGNWAKVFLVLCLFSGV        NaN   0.0       0       0
+170  YSMQGNWAKVFLVLCLFSGVD        NaN   0.0       0       0
+171  SMQGNWAKVFLVLCLFSGVDA        NaN   0.0       0       0
+
+[172 rows x 5 columns]
+Accuracy: 0.8546511627906976
+Precision: 0.9333333333333333
+Recall: 0.3684210526315789
+F1: 0.5283018867924527
+ROC AUC: 0.6804791830322073
+MCC: 0.5307693717999671
+Jaccard index: 0.21621621621621623
+Jaccard index max scores: 0.21621621621621623
+sequences predicted
+['ATASLRTHVDMMVGAATLCSA', 'LRTHVDMMVGAATLCSALYVGD', 'VDMMVGAATLCSALYVGDLCGA', 'MVGAATLCSALYVGDLCGALFLV', 'ATLCSALYVGDLCGALFLVGQGFSWR', 'QTMFDLVIGAHWGVMAGVAYY']

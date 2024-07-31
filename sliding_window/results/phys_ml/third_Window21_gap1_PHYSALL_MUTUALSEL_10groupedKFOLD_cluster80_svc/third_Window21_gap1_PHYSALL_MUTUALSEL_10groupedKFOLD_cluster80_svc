@@ -1,0 +1,76 @@
+/home/martinha/PycharmProjects/viral_fp/viral_fp_new/src/classify_segments/results/third_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_svc/third_Window21_gap1_PHYSALL_MUTUALSEL_10groupedKFOLD_cluster80_svc
+===TRAIN MODELS===
+
+train_best_model
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fade43ec220>, 'model_name': 'svc', 'model': None, 'scaler': None, 'score': make_scorer(matthews_corrcoef), 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'optType': 'gridSearch', 'param_grid': None, 'n_jobs': 10, 'random_state': 1, 'n_iter': 15, 'refit': True, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+640    1434
+641    1435
+642    1436
+643    1437
+644    1438
+Name: cluster80, Length: 645, dtype: int64, 'params': {}, 'start': 1395555.644910057}
+['Model with rank: 1\n', 'Mean validation score: 0.863 (std: 0.086)\n', "Parameters: {'clf__C': 10, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}\n", '\n']
+['Model with rank: 2\n', 'Mean validation score: 0.860 (std: 0.083)\n', "Parameters: {'clf__C': 0.01, 'clf__kernel': 'linear'}\n", '\n']
+['Model with rank: 2\n', 'Mean validation score: 0.860 (std: 0.083)\n', "Parameters: {'clf__C': 0.1, 'clf__kernel': 'linear'}\n", '\n']
+['Model with rank: 2\n', 'Mean validation score: 0.860 (std: 0.083)\n', "Parameters: {'clf__C': 1.0, 'clf__kernel': 'linear'}\n", '\n']
+['Model with rank: 2\n', 'Mean validation score: 0.860 (std: 0.083)\n', "Parameters: {'clf__C': 10, 'clf__kernel': 'linear'}\n", '\n']
+Best score (scorer: make_scorer(matthews_corrcoef)) and parameters from a -fold cross validation:
+
+Score:	0.863
+
+Parameters:	{'clf__C': 10, 'clf__gamma': 0.0001, 'clf__kernel': 'rbf'}
+
+Finished train_best_model in 19.6241 secs
+
+	means	stds	clf__C	clf__kernel	clf__gamma
+15	0.863	0.086	10.000	rbf	0.0001
+0	0.860	0.083	0.010	linear	
+1	0.860	0.083	0.100	linear	
+2	0.860	0.083	1.000	linear	
+3	0.860	0.083	10.000	linear	
+13	0.849	0.080	10.000	rbf	scale
+10	0.783	0.109	1.000	rbf	scale
+12	0.720	0.147	1.000	rbf	0.0001
+14	0.704	0.122	10.000	rbf	0.001
+11	0.642	0.141	1.000	rbf	0.001
+9	0.141	0.151	0.100	rbf	0.0001
+7	0.086	0.143	0.100	rbf	scale
+8	0.043	0.130	0.100	rbf	0.001
+4	0.000	0.000	0.010	rbf	scale
+5	0.000	0.000	0.010	rbf	0.001
+6	0.000	0.000	0.010	rbf	0.0001
+
+===Scikit learn cross validate ===
+
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fade43ec220>, 'clf': None, 'scoring': {'accuracy': make_scorer(accuracy_score), 'prec': 'precision', 'recall': 'recall', 'MCC': make_scorer(matthews_corrcoef), 'F1': make_scorer(f1_score), 'roc_auc': make_scorer(roc_auc_score)}, 'cv': StratifiedGroupKFold(n_splits=10, random_state=42, shuffle=True), 'n_jobs': 10, 'random_state': 1, 'groups': 0        34
+1        35
+2        31
+3        36
+4        36
+       ... 
+640    1434
+641    1435
+642    1436
+643    1437
+644    1438
+Name: cluster80, Length: 645, dtype: int64, 'params': {'return_train_score': False}}	fit_time	score_time	test_accuracy	test_prec	test_recall	test_MCC	test_F1	test_roc_auc
+0	0.0615	0.0150	0.9630	1.0000	0.8571	0.9035	0.9231	0.9286
+1	0.0597	0.0149	0.9298	0.8462	0.8462	0.8007	0.8462	0.9003
+2	0.0595	0.0226	0.9896	1.0000	0.9808	0.9793	0.9903	0.9904
+3	0.0618	0.0161	1.0000	1.0000	1.0000	1.0000	1.0000	1.0000
+4	0.0615	0.0174	0.8657	0.9333	0.6364	0.6919	0.7568	0.8071
+5	0.0592	0.0155	0.9667	0.9333	0.9333	0.9111	0.9333	0.9556
+6	0.0609	0.0172	0.9254	0.9500	0.8261	0.8336	0.8837	0.9017
+7	0.0621	0.0144	0.9298	1.0000	0.7143	0.8084	0.8333	0.8571
+8	0.0599	0.0158	0.9344	1.0000	0.7647	0.8372	0.8667	0.8824
+9	0.0582	0.0166	0.9394	0.9048	0.9048	0.8603	0.9048	0.9302
+mean	0.0605	0.0166	0.9444	0.9568	0.8464	0.8626	0.8938	0.9153
+std	0.0012	0.0022	0.0362	0.0504	0.1102	0.0860	0.0698	0.0561
+
+features_importances_df
+{'self': <propythia_new.src.propythia.shallow_ml.ShallowML object at 0x7fade43ec220>, 'classifier': None, 'model_name': None, 'top_features': 20, 'column_to_sort': 'mean_coef'}
