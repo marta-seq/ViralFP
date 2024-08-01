@@ -1,0 +1,25 @@
+['PISLTVALMLGGITVGGMARN']
+     y_pred
+0         1
+1         1
+2         1
+3         1
+4         1
+..      ...
+174       0
+175       0
+176       0
+177       0
+178       0
+
+[179 rows x 1 columns]
+Accuracy: 0.9832402234636871
+Precision: 0.95
+Recall: 0.9047619047619048
+F1: 0.9268292682926829
+ROC AUC: 0.949216395418927
+MCC: 0.9177200607493413
+Jaccard index: 0.8636363636363636
+Jaccard index max scores: 0.8636363636363636
+sequences predicted
+['DPISLTVALMLGGITVGGMA']

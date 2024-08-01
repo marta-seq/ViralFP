@@ -1,0 +1,25 @@
+['MVGAATLCSALYVGDLCGALFLVGQGFSWRHR']
+     y_pred
+0         0
+1         0
+2         0
+3         0
+4         0
+..      ...
+187       0
+188       0
+189       0
+190       0
+191       0
+
+[192 rows x 1 columns]
+Accuracy: 0.9791666666666666
+Precision: 0.9666666666666667
+Recall: 0.90625
+F1: 0.9354838709677419
+ROC AUC: 0.95
+MCC: 0.9237604307034012
+Jaccard index: 0.8787878787878788
+Jaccard index max scores: 0.8787878787878788
+sequences predicted
+['MMVGAATLCSALYVGDLCGALFLVGQGFSW']

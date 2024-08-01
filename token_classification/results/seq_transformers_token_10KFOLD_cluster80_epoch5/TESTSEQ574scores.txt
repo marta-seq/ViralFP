@@ -1,0 +1,25 @@
+['GTFTWTLSDSSGVENPGGYCLTKWMILAAELKCFGNTAV']
+     y_pred
+0         0
+1         0
+2         0
+3         0
+4         0
+..      ...
+228       0
+229       0
+230       0
+231       0
+232       0
+
+[233 rows x 1 columns]
+Accuracy: 0.9399141630901288
+Precision: 1.0
+Recall: 0.6410256410256411
+F1: 0.7812500000000001
+ROC AUC: 0.8205128205128205
+MCC: 0.7732268001163346
+Jaccard index: 0.6410256410256411
+Jaccard index max scores: 0.6410256410256411
+sequences predicted
+['GVENPGGYCLTKWMILAAELKCFGN']

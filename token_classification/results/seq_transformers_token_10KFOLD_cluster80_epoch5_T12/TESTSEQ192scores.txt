@@ -1,0 +1,25 @@
+['LAATSASLFPPWTAAAGVPFY']
+     y_pred
+0         0
+1         0
+2         0
+3         0
+4         0
+..      ...
+590       0
+591       0
+592       0
+593       0
+594       0
+
+[595 rows x 1 columns]
+Accuracy: 0.9529411764705882
+Precision: 0.0
+Recall: 0.0
+F1: 0.0
+ROC AUC: 0.49390243902439024
+MCC: -0.020869596778242055
+Jaccard index: 0.0
+Jaccard index max scores: 0.0
+sequences predicted
+['AIEDLLF']

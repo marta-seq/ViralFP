@@ -1,0 +1,25 @@
+['LVAPPTLCSALYVEDAFGAVSLVGQAFTFRPR']
+     y_pred
+0         0
+1         0
+2         0
+3         0
+4         0
+..      ...
+188       0
+189       0
+190       0
+191       0
+192       0
+
+[193 rows x 1 columns]
+Accuracy: 0.9585492227979274
+Precision: 1.0
+Recall: 0.75
+F1: 0.8571428571428571
+ROC AUC: 0.875
+MCC: 0.8452792683013812
+Jaccard index: 0.75
+Jaccard index max scores: 0.75
+sequences predicted
+['TLCSALYVEDAFGAVSLVGQAFTF']

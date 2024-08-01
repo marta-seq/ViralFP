@@ -1,0 +1,25 @@
+['LAATSASLFPPWTAAAGVPFY']
+     y_pred
+0         0
+1         0
+2         0
+3         0
+4         0
+..      ...
+590       0
+591       0
+592       0
+593       0
+594       0
+
+[595 rows x 1 columns]
+Accuracy: 0.934453781512605
+Precision: 0.0
+Recall: 0.0
+F1: 0.0
+ROC AUC: 0.4843205574912892
+MCC: -0.03378329823747487
+Jaccard index: 0.0
+Jaccard index max scores: 0.0
+sequences predicted
+['E', 'SKASSRSAIEDLLFDK', 'K']

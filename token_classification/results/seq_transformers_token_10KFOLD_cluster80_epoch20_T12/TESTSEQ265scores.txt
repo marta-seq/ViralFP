@@ -1,0 +1,25 @@
+['AAGLGALFLGFLGDSREHMGA']
+     y_pred
+0         1
+1         1
+2         1
+3         1
+4         1
+..      ...
+340       0
+341       0
+342       0
+343       0
+344       0
+
+[345 rows x 1 columns]
+Accuracy: 0.9884057971014493
+Precision: 1.0
+Recall: 0.8095238095238095
+F1: 0.8947368421052632
+ROC AUC: 0.9047619047619048
+MCC: 0.8942323903461845
+Jaccard index: 0.8095238095238095
+Jaccard index max scores: 0.8095238095238095
+sequences predicted
+['AAGLGALFLGFLGDSR', 'H']

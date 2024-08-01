@@ -1,0 +1,25 @@
+['LAATSASLFPPWTAAAGVPFY']
+     y_pred
+0         0
+1         0
+2         0
+3         0
+4         0
+..      ...
+590       0
+591       0
+592       0
+593       0
+594       0
+
+[595 rows x 1 columns]
+Accuracy: 0.973109243697479
+Precision: 1.0
+Recall: 0.23809523809523808
+F1: 0.3846153846153846
+ROC AUC: 0.6190476190476191
+MCC: 0.48128828998750434
+Jaccard index: 0.23809523809523808
+Jaccard index max scores: 0.23809523809523808
+sequences predicted
+['LFPP', 'A']

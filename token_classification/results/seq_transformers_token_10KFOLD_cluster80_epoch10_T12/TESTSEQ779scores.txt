@@ -1,0 +1,25 @@
+['FRWYGPKY', 'CGYATVT']
+     y_pred
+0         0
+1         0
+2         0
+3         0
+4         0
+..      ...
+506       0
+507       0
+508       0
+509       0
+510       0
+
+[511 rows x 1 columns]
+Accuracy: 0.9706457925636007
+Precision: 0.0
+Recall: 0.0
+F1: 0.0
+ROC AUC: 0.5
+MCC: 0.0
+Jaccard index: 0.0
+Jaccard index max scores: 0.0
+sequences predicted
+[]
